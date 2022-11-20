@@ -1,0 +1,94 @@
+.separator {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: stretch;
+}
+.separator > .separator-dot {
+  flex-grow: 1;
+  position: relative;
+}
+.separator > .separator-dot > .separator-dot-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 1px;
+  border-top: 1px dashed #d5d5d5;
+}
+.separator > .separator-text {
+  padding: 0 10px;
+  display: inline;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.item {
+  height: 50px;
+  padding: 15px 0 15px 15px;
+  margin: 15px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #fefefe;
+
+  border: 1px solid #e9e9e8;
+  border-radius: 10px;
+}
+
+.item > .item-info {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item > .item-info > .item-info-phone {
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item > .item-info > .item-info-phone > .count {
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
+
+  display: inline-block;
+
+  background-color: #f24c1d;
+  border-radius: 50%;
+
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.item > .item-info > .item-info-description {
+  color: #b8b7b8;
+  font-size: 12px;
+  font-weight: 300;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item > .item-time {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+
+.item > .item-noon {
+  padding: 4px;
+  color: #b7b7b7;
+  font-size: 12px;
+  border: 1px solid #eee;
+}
